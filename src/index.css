@@ -132,7 +132,7 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  /* Animated gradient background - Purple to Coral */
+  /* Fixed gradient background - Purple to Coral */
   .gradient-animated {
     background: linear-gradient(
       135deg,
@@ -141,14 +141,6 @@ All colors MUST be HSL.
       hsl(var(--gradient-mid-2)) 70%,
       hsl(var(--gradient-end)) 100%
     );
-    background-size: 400% 400%;
-    animation: gradientAnimation 8s ease infinite;
-  }
-  
-  @keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
   }
   
   /* Gradient text - Magenta to Coral */
