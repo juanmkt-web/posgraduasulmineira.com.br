@@ -30,7 +30,7 @@ const testimonials = [
     name: "Julia de Jesus",
     course: "Mba Em Gestão Industrial Farmacêutica",
     photo: juliaFoto,
-    imageScale: 1.15,
+    imageScale: 1.18,
   },
 ];
 
