@@ -12,6 +12,7 @@ const testimonials = [
     name: "Gabriela Fernandes",
     course: "Especialização Em Engenharia Elétrica e Suas Técnicas",
     photo: gabrielaFoto,
+    imageScale: 1,
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const testimonials = [
     name: "Mauricio Braga",
     course: "Personal Training: Metodologia do Treinamento Personalizado",
     photo: mauricioFoto,
+    imageScale: 1,
   },
   {
     id: 3,
@@ -28,6 +30,7 @@ const testimonials = [
     name: "Julia de Jesus",
     course: "Mba Em Gestão Industrial Farmacêutica",
     photo: juliaFoto,
+    imageScale: 1.15,
   },
 ];
 
@@ -116,11 +119,14 @@ const Testimonials = () => {
               "{currentTestimonial.quote}"
             </p>
             <div className="flex items-center gap-4 md:gap-6 border-t border-white/20 pt-4 md:pt-8">
-              <img
-                src={currentTestimonial.photo}
-                alt={currentTestimonial.name}
-                className="w-14 h-14 md:w-20 md:h-20 rounded-full border-2 md:border-4 border-cyan-light object-cover"
-              />
+              <div className="w-14 h-14 md:w-20 md:h-20 rounded-full border-2 md:border-4 border-cyan-light overflow-hidden flex-shrink-0">
+                <img
+                  src={currentTestimonial.photo}
+                  alt={currentTestimonial.name}
+                  className="w-full h-full object-cover"
+                  style={{ transform: `scale(${currentTestimonial.imageScale})` }}
+                />
+              </div>
               <div className="text-white">
                 <p className="font-bold text-base md:text-xl">{currentTestimonial.name}</p>
                 <p className="text-xs md:text-sm opacity-90">{currentTestimonial.course}</p>
