@@ -1,22 +1,34 @@
 import { ExternalLink } from "lucide-react";
-import juliaImg from "@/assets/julia-de-jesus.png";
-import mauricioImg from "@/assets/mauricio-braga.png";
-import gabrielaImg from "@/assets/gabriela-fernandes.png";
+import deboraImg from "@/assets/debora.avif";
+import mauricioImg from "@/assets/mauricio.avif";
+import veraImg from "@/assets/vera.avif";
+import sergioImg from "@/assets/sergio.avif";
+import paolaImg from "@/assets/paola.avif";
 
 const professors = [
   {
-    name: "Julia de Jesus",
-    image: juliaImg,
+    name: "Doutora Débora Maria Moreno Luzia",
+    image: deboraImg,
     lattesUrl: "http://lattes.cnpq.br/",
   },
   {
-    name: "Maurício Braga",
+    name: "Mestre Maurício Ricardo Soares",
     image: mauricioImg,
     lattesUrl: "http://lattes.cnpq.br/",
   },
   {
-    name: "Gabriela Fernandes",
-    image: gabrielaImg,
+    name: "Doutora Vera Lúcia da Silva Farias",
+    image: veraImg,
+    lattesUrl: "http://lattes.cnpq.br/",
+  },
+  {
+    name: "Mestre Sérgio Ferreira da Silva",
+    image: sergioImg,
+    lattesUrl: "http://lattes.cnpq.br/",
+  },
+  {
+    name: "Mestra Paola Marie Vitaca Rodrigues",
+    image: paolaImg,
     lattesUrl: "http://lattes.cnpq.br/",
   },
 ];
@@ -56,7 +68,7 @@ const Faculty = () => {
           </div>
 
           {/* Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
             {professors.map((professor, index) => (
               <a
                 key={index}
