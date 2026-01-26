@@ -695,7 +695,7 @@ All colors MUST be HSL.
 }
 
 .benefits-title-highlight {
-  color: #2BADEE;
+  color: #F45A34;
 }
 
 /* Descrição */
@@ -751,8 +751,8 @@ All colors MUST be HSL.
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2BADEE;
-  box-shadow: 0 10px 15px -3px rgba(43, 173, 238, 0.3);
+  background-color: #F45A34;
+  box-shadow: 0 10px 15px -3px rgba(244, 90, 52, 0.3);
 }
 
 @media (min-width: 768px) {
@@ -810,7 +810,7 @@ All colors MUST be HSL.
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background-color: #2BADEE;
+  background-color: #F45A34;
   color: #ffffff;
   font-weight: 700;
   font-size: 0.875rem;
@@ -837,8 +837,8 @@ All colors MUST be HSL.
 }
 
 .benefits-cta:hover {
-  background-color: #1a9ad8;
-  box-shadow: 0 25px 50px -12px rgba(43, 173, 238, 0.4);
+  background-color: #d94a28;
+  box-shadow: 0 25px 50px -12px rgba(244, 90, 52, 0.4);
   transform: scale(1.05);
 }
 
