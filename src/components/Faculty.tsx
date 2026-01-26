@@ -35,7 +35,7 @@ const professors = [
 
 const Faculty = () => {
   return (
-    <section className="relative overflow-hidden pt-12 pb-16 md:pt-24 md:pb-32 bg-gradient-to-t from-[hsl(230,75%,10%)] via-[hsl(215,70%,40%)] via-[70%] to-[hsl(213,97%,55%)]">
+    <section className="relative overflow-hidden pt-12 pb-16 md:pt-24 md:pb-32 gradient-animated">
       {/* Wave Top */}
       <div className="absolute top-0 left-0 right-0 h-10 md:h-16 lg:h-20 z-20 pointer-events-none">
         <svg
@@ -78,7 +78,7 @@ const Faculty = () => {
                 className="flex flex-col items-center text-center cursor-pointer group"
               >
                 <div className="relative mb-3 md:mb-4 overflow-hidden rounded-lg">
-                  <div className="absolute inset-0 bg-gradient-to-t from-blue-500/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
                   <img
                     src={professor.image}
                     alt={professor.name}
@@ -88,7 +88,7 @@ const Faculty = () => {
                 <h3 className="text-white font-semibold text-sm md:text-base lg:text-lg mb-1 leading-tight group-hover:scale-105 transition-transform duration-300">
                   {professor.name}
                 </h3>
-                <span className="flex items-center gap-1 text-blue-400 text-xs md:text-sm font-medium underline underline-offset-2 group-hover:text-blue-300 transition-colors duration-300">
+                <span className="flex items-center gap-1 text-white/80 text-xs md:text-sm font-medium underline underline-offset-2 group-hover:text-white transition-colors duration-300">
                   <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
                   Currículo Lattes
                 </span>
