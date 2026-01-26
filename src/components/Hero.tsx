@@ -27,12 +27,12 @@ const Hero = () => {
                 textShadow: "2px 2px 8px rgba(0, 0, 0, 0.2)",
               }}
             >
-              ASSUMA O CONTROLE TOTAL<span className="text-accent"> DO SEU FUTURO</span> NA SUA CARREIRA.
+              CONQUISTE SEU ESPAÇO<span className="text-accent"> EM TEMPO RECORDE</span> NO MERCADO
             </h1>
 
             <p className="text-base md:text-xl text-white/90 leading-relaxed mb-4 md:mb-8">
-              A qualificação de excelência que faltava no seu currículo, agora 100% online. A decisão inteligente para
-              quem busca reconhecimento e estabilidade
+              Chega de perder tempo com teorias longas. Nossa metodologia foca no que realmente importa para você
+              crescer e ser notado rapidamente pelas empresas.
             </p>
 
             <div className="mb-4 md:mb-8 flex justify-center md:justify-start">
@@ -45,7 +45,7 @@ const Hero = () => {
                   size="lg"
                   className="bg-accent text-accent-foreground hover:bg-[#1a9ad8] font-bold text-sm md:text-lg px-6 md:px-10 py-5 md:py-7 rounded-full shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 animate-pulse-cta whitespace-nowrap"
                 >
-                  ESCOLHER MEU FUTURO AGORA <ArrowRight className="ml-2 h-5 w-5" />
+                  QUERO CRESCER RÁPIDO <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </a>
             </div>
