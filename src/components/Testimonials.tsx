@@ -1,7 +1,7 @@
 import { Quote, ChevronLeft, ChevronRight } from "lucide-react";
-import bernardoFoto from "@/assets/bernardo.png";
-import julianoFoto from "@/assets/juliano.png";
-import gabrielaFoto from "@/assets/gabriela.png";
+import gabrielaFoto from "@/assets/gabriela-fernandes.png";
+import mauricioFoto from "@/assets/mauricio-braga.png";
+import juliaFoto from "@/assets/julia-jesus.png";
 import { useState, useEffect } from "react";
 
 const testimonials = [
@@ -11,7 +11,7 @@ const testimonials = [
       "Na Engenharia, a teoria da faculdade é uma coisa, o campo é outra. Eu tinha insegurança de assumir projetos maiores. A especialização me deu a firmeza técnica que faltava. Hoje assino meus projetos e laudos sabendo exatamente o que estou fazendo, sem aquele frio na barriga.",
     name: "Gabriela Fernandes",
     course: "Especialização Em Engenharia Elétrica e Suas Técnicas",
-    photo: bernardoFoto,
+    photo: gabrielaFoto,
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const testimonials = [
       "O mercado de personal tá lotado, e pra cobrar um valor justo você tem que entregar resultado rápido. O curso me ensinou a montar treinos com ciência de verdade, não 'achismo'. Meus alunos evoluem muito mais e minha agenda, que vivia buracos, agora tá cheia.",
     name: "Mauricio Braga",
     course: "Personal Training: Metodologia do Treinamento Personalizado",
-    photo: julianoFoto,
+    photo: mauricioFoto,
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const testimonials = [
       "Trabalhar em indústria farmacêutica é pressão pura, qualquer erro custa caro. Eu precisava entender melhor as normas e a gestão da fábrica pra subir de cargo. O curso abriu minha visão: hoje consigo resolver problemas na linha de produção que antes me deixavam sem dormir.",
     name: "Julia de Jesus",
     course: "Mba Em Gestão Industrial Farmacêutica",
-    photo: gabrielaFoto,
+    photo: juliaFoto,
   },
 ];
 
