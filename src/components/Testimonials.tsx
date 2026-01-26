@@ -8,25 +8,25 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "A Pós-Graduação foi fundamental para minha transição de carreira. O curso me entregou a base sólida necessária para atuar com segurança em um novo mercado.",
-    name: "Bernardo Campos",
-    course: "Pós em Data Science e Analytics",
+      "Na Engenharia, a teoria da faculdade é uma coisa, o campo é outra. Eu tinha insegurança de assumir projetos maiores. A especialização me deu a firmeza técnica que faltava. Hoje assino meus projetos e laudos sabendo exatamente o que estou fazendo, sem aquele frio na barriga.",
+    name: "Gabriela Fernandes",
+    course: "Especialização Em Engenharia Elétrica e Suas Técnicas",
     photo: bernardoFoto,
   },
   {
     id: 2,
     quote:
-      "Em apenas 6 meses, apliquei o que aprendi e conquistei minha promoção. O conteúdo é 100% voltado para a prática do mercado. Recomendo muito!",
-    name: "Juliano Souza",
-    course: "MBA em Liderança e Gestão de Pessoas",
+      "O mercado de personal tá lotado, e pra cobrar um valor justo você tem que entregar resultado rápido. O curso me ensinou a montar treinos com ciência de verdade, não 'achismo'. Meus alunos evoluem muito mais e minha agenda, que vivia buracos, agora tá cheia.",
+    name: "Mauricio Braga",
+    course: "Personal Training: Metodologia do Treinamento Personalizado",
     photo: julianoFoto,
   },
   {
     id: 3,
     quote:
-      "Conteúdo prático e direto ao ponto. Apliquei o que aprendi e fui promovido em menos de um ano. Recomendo para quem quer crescer rápido.",
-    name: "Gabriela Silva",
-    course: "Psicopedagogia Clínica e Institucional",
+      "Trabalhar em indústria farmacêutica é pressão pura, qualquer erro custa caro. Eu precisava entender melhor as normas e a gestão da fábrica pra subir de cargo. O curso abriu minha visão: hoje consigo resolver problemas na linha de produção que antes me deixavam sem dormir.",
+    name: "Julia de Jesus",
+    course: "Mba Em Gestão Industrial Farmacêutica",
     photo: gabrielaFoto,
   },
 ];
@@ -48,9 +48,7 @@ const Testimonials = () => {
   const currentTestimonial = testimonials[currentIndex];
 
   const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1));
   };
 
   const goToNext = () => {
@@ -58,7 +56,11 @@ const Testimonials = () => {
   };
 
   return (
-    <section id="depoimentos" className="pt-4 pb-8 md:pt-10 md:pb-24 bg-[#1e2842] relative" style={{ marginTop: "15px" }}>
+    <section
+      id="depoimentos"
+      className="pt-4 pb-8 md:pt-10 md:pb-24 bg-[#1e2842] relative"
+      style={{ marginTop: "15px" }}
+    >
       <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +107,10 @@ const Testimonials = () => {
             <ChevronRight className="w-5 h-5 lg:w-6 lg:h-6" />
           </button>
 
-          <div className="glass-effect rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-12 shadow-2xl animate-fade-in" key={currentTestimonial.id}>
+          <div
+            className="glass-effect rounded-2xl md:rounded-3xl p-5 md:p-8 lg:p-12 shadow-2xl animate-fade-in"
+            key={currentTestimonial.id}
+          >
             <Quote className="h-8 w-8 md:h-12 md:w-12 text-cyan-light mb-3 md:mb-6" />
             <p className="text-base md:text-xl lg:text-2xl text-white mb-4 md:mb-8 leading-relaxed italic font-light">
               "{currentTestimonial.quote}"
