@@ -2,19 +2,19 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const faqItems = [
   {
-    question: "A Pós-Graduação é reconhecida e o certificado é válido?",
+    question: "A Pós-Graduação é reconhecida e o Certificado é válido?",
     answer:
       "Sim! A FASUL é credenciada pelo MEC com nota máxima (5). Todos os nossos Cursos de Pós-Graduação são reconhecidos nacionalmente e o Certificado possui validade em todo o território brasileiro, sendo aceito em concursos públicos, progressão de carreira e processos seletivos.",
   },
   {
     question: "Quanto tempo dura o Curso de Pós-Graduação?",
     answer:
-      "A duração varia de acordo com o Curso escolhido, mas em média nossos cursos têm duração de 360 a 720 horas. Você pode estudar no seu próprio ritmo, respeitando o prazo mínimo estabelecido pelo MEC.",
+      "A duração varia de acordo com o Curso escolhido, mas em média nossos Cursos têm duração de 360 a 720 horas. Você pode estudar no seu próprio ritmo, respeitando o prazo mínimo estabelecido pelo MEC.",
   },
   {
     question: "Como funciona a metodologia de ensino EaD?",
     answer:
-      "Nossa metodologia é 100% online, com acesso 24 horas à plataforma de estudos. Você terá acesso a videoaulas, materiais complementares, fóruns de discussão e avaliações online. Todo o conteúdo foi desenvolvido por Professores mestres e doutores com experiência de mercado.",
+      "Nossa metodologia é 100% online, com acesso 24 horas à plataforma de estudos. Você terá acesso a video aulas, materiais complementares, fóruns de discussão e avaliações online. Todo o conteúdo foi desenvolvido por Professores Mestres e doutores com experiência de mercado.",
   },
   {
     question: "Preciso comparecer presencialmente em algum momento?",
@@ -39,7 +39,9 @@ const FAQ = () => {
         <div className="max-w-4xl mx-auto">
           {/* Header */}
           <div className="text-center mb-6 md:mb-10">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#1E2842] mb-2 md:mb-4">PERGUNTAS FREQUENTES</h2>
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#1E2842] mb-2 md:mb-4">
+              PERGUNTAS FREQUENTES
+            </h2>
             <p className="text-gray-600 text-sm md:text-lg">Tire suas dúvidas sobre a Pós-Graduação EaD da FASUL</p>
           </div>
 
@@ -54,7 +56,9 @@ const FAQ = () => {
                 <AccordionTrigger className="text-left font-medium text-sm md:text-lg text-[#1E2842] hover:no-underline py-3 md:py-5">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-sm md:text-base pb-3 md:pb-5">{item.answer}</AccordionContent>
+                <AccordionContent className="text-gray-600 text-sm md:text-base pb-3 md:pb-5">
+                  {item.answer}
+                </AccordionContent>
               </AccordionItem>
             ))}
           </Accordion>
