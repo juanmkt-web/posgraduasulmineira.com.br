@@ -17,25 +17,25 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 20%;
 
-    /* Brand colors - Blue palette */
-    --primary: 210 90% 50%;
+    /* Brand colors - Coral palette */
+    --primary: 12 90% 58%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 200 85% 55%;
+    --secondary: 340 80% 45%;
     --secondary-foreground: 0 0% 100%;
     
-    /* Blue accent for benefits section - #2BADEE */
-    --cyan-light: 200 85% 55%;
+    /* Coral accent for benefits section */
+    --cyan-light: 12 90% 58%;
     --cyan-light-foreground: 0 0% 100%;
     
-    /* Dark blue for backgrounds - MANTIDO */
-    --dark-blue: 218 36% 19%;
+    /* Dark blue for header */
+    --dark-blue: 220 60% 25%;
 
     --muted: 210 20% 96%;
     --muted-foreground: 218 20% 40%;
 
-    /* CTA Blue accent - #2BADEE */
-    --accent: 200 85% 55%;
+    /* CTA Coral accent */
+    --accent: 12 90% 58%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -43,14 +43,15 @@ All colors MUST be HSL.
 
     --border: 210 15% 88%;
     --input: 210 15% 88%;
-    --ring: 210 90% 50%;
+    --ring: 12 90% 58%;
 
     --radius: 0.75rem;
     
-    /* Gradient colors - Cyan, Purple, Blue */
-    --gradient-cyan: 210 90% 60%;
-    --gradient-purple: 250 70% 55%;
-    --gradient-blue: 220 85% 50%;
+    /* Gradient colors - Purple to Coral */
+    --gradient-start: 270 70% 18%;
+    --gradient-mid: 305 75% 35%;
+    --gradient-mid-2: 340 80% 45%;
+    --gradient-end: 12 85% 55%;
     
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -85,16 +86,16 @@ All colors MUST be HSL.
     --popover: 0 0% 13%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 210 90% 50%;
+    --primary: 12 90% 58%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 200 85% 55%;
+    --secondary: 340 80% 45%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 218 30% 15%;
     --muted-foreground: 210 15% 70%;
 
-    --accent: 200 85% 55%;
+    --accent: 12 90% 58%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 63% 31%;
@@ -102,7 +103,7 @@ All colors MUST be HSL.
 
     --border: 218 30% 20%;
     --input: 218 30% 20%;
-    --ring: 210 90% 50%;
+    --ring: 12 90% 58%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -131,9 +132,15 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  /* Animated gradient background */
+  /* Animated gradient background - Purple to Coral */
   .gradient-animated {
-    background: linear-gradient(135deg, hsl(var(--gradient-cyan)), hsl(var(--gradient-purple)), hsl(var(--gradient-blue)));
+    background: linear-gradient(
+      135deg,
+      hsl(var(--gradient-start)) 0%,
+      hsl(var(--gradient-mid)) 25%,
+      hsl(var(--gradient-mid-2)) 70%,
+      hsl(var(--gradient-end)) 100%
+    );
     background-size: 400% 400%;
     animation: gradientAnimation 8s ease infinite;
   }
@@ -144,31 +151,31 @@ All colors MUST be HSL.
     100% { background-position: 0% 50%; }
   }
   
-  /* Gradient text */
+  /* Gradient text - Magenta to Coral */
   .gradient-text {
-    background: linear-gradient(135deg, hsl(var(--gradient-purple)), hsl(var(--gradient-cyan)));
+    background: linear-gradient(
+      135deg,
+      hsl(var(--gradient-mid-2)),
+      hsl(var(--gradient-end))
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   
-  /* Pulse animation for CTA */
+  /* Pulse animation for CTA - Coral glow */
   .animate-pulse-cta {
     animation: pulseCTA 2s infinite;
   }
   
   @keyframes pulseCTA {
-    0% {
+    0%, 100% {
       transform: scale(1);
       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     }
     50% {
       transform: scale(1.05);
-      box-shadow: 0 15px 30px rgba(43, 173, 238, 0.5);
-    }
-    100% {
-      transform: scale(1);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 15px 30px hsl(12 90% 58% / 0.5);
     }
   }
   

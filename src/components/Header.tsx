@@ -7,7 +7,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#1e2842] border-b border-white/10 shadow-lg">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-dark-blue border-b border-white/10 shadow-lg">
       <div className="container mx-auto px-4 py-4 md:py-5 flex items-center justify-between">
         <div className="flex items-center">
           <img src={logoFasul} alt="Fasul Educação" className="h-12 md:h-14" />
@@ -50,7 +50,7 @@ const Header = () => {
 
       {/* Mobile menu sidebar */}
       <div
-        className={`md:hidden fixed top-0 right-0 h-full w-72 bg-[#1e2842] z-50 transform transition-transform duration-300 ease-in-out ${
+        className={`md:hidden fixed top-0 right-0 h-full w-72 bg-dark-blue z-50 transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
